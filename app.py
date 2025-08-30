@@ -82,7 +82,7 @@ cols = st.columns(5)
 
 for i, title in enumerate(titles):
     with cols[i % 5]:
-        st.image(fetch_poster(title), use_column_width=True)
+        st.image(fetch_poster(title), use_container_width=True)  # ✅ fixed
         st.caption(f"**{title}**")
 
 # --- Display Full User Profile Below ---
